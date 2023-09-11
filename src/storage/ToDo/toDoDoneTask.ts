@@ -5,11 +5,11 @@ import { toDoGetAll } from "./toDoGetAll";
 export async function toDoDoneTask(taskId: string) {
     try {
 
-        const storedGroups = await toDoGetAll();
+        const storedTasks = await toDoGetAll();
 
-        const tasks = storedGroups.filter(task => task.id !== taskId)
+        const tasks = storedTasks.filter(task => task.id !== taskId)
 
-        const taskDone = storedGroups.filter(task => task.id === taskId)
+        const taskDone = storedTasks.filter(task => task.id === taskId)
 
         taskDone[0].done =  taskDone[0].done ? false : true
 

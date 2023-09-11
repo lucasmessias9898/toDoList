@@ -7,9 +7,9 @@ import { TaskDTO } from "./TaskDTO";
 export async function toDoCreate( newTask: TaskDTO) {
     try {
 
-        const storedGroups = await toDoGetAll();
+        const storedTasks = await toDoGetAll();
 
-        const storage = JSON.stringify([...storedGroups, newTask])
+        const storage = JSON.stringify([...storedTasks, newTask])
 
         await AsyncStorage.setItem(TODO_COLLETION, storage);
 

@@ -5,9 +5,9 @@ import { toDoGetAll } from "./toDoGetAll";
 export async function toDoRemove(taskId: string) {
     try {
 
-        const storedGroups = await toDoGetAll();
+        const storedTasks = await toDoGetAll();
 
-        const tasks = storedGroups.filter(task => task.id !== taskId)
+        const tasks = storedTasks.filter(task => task.id !== taskId)
 
         await AsyncStorage.setItem(TODO_COLLETION, JSON.stringify(tasks));
 
