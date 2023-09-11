@@ -3,7 +3,6 @@
   <b>Ajudando você ter um melhor controle e foco nas suas tarefas.</b>
 </h4>
 
-<p align="center" display="flex">
-  <img alt="Mockup ToDo List" src=".github/mockup1.png" width="50%">
-  <img alt="Mockup ToDo List" src=".github/mockup2.png" width="50%">
+<p align="center">
+  <img alt="Mockup ToDo List" src=".github/mockup1.png" width="50%" heigth="50%">
 </p>
