@@ -4,6 +4,6 @@
 </h4>
 
 <p align="center">
-  <img alt="Mockup ToDo List" src=".github/mockup1.png" width="100%">
-  <img alt="Mockup ToDo List" src=".github/mockup2.png" width="100%">
+  <img alt="Mockup ToDo List" src=".github/mockup1.png" width="50%">
+  <img alt="Mockup ToDo List" src=".github/mockup2.png" width="50%">
 </p>
