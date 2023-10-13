@@ -2,11 +2,11 @@ export default {
     COLORS: {
         WHITE: '#FFFFFF',
     
-        BLUE: '#4EA8DE',
-        BLUE_DARK: '#1E6F9F',
+        BLUE: '#349E97',
+        BLUE_DARK: '#1F8078',
 
-        PURPLE: '#8284FA',
-        PURPLE_DARK: '#5E60CE',
+        PURPLE: '#C8CE13',
+        PURPLE_DARK: '#B6B806',
 
         DANGER: '#E25858',
     
