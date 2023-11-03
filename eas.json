@@ -12,6 +12,7 @@
       }
     },
     "production": {
+      "autoIncrement": true,
       "env": {
         "GOOGLE_ADS_MOBILE": "ca-app-pub-1504438003408356~6552695477"
       }
