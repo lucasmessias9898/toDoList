@@ -1,0 +1,20 @@
+{
+  "cli": {
+    "version": ">= 5.2.0"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "distribution": "internal"
+      },
+      "env": {
+        "GOOGLE_ADS_MOBILE": "ca-app-pub-6590861475777451~5768790900"
+      }
+    },
+    "production": {
+      "env": {
+        "GOOGLE_ADS_MOBILE": "ca-app-pub-6590861475777451~5768790900"
+      }
+    }
+  }
+}

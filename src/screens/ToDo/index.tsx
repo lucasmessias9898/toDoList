@@ -19,6 +19,14 @@ import { toDoRemove } from "@storage/ToDo/toDoRemove";
 import Loading from "@components/Loading";
 import { toDoDoneTask } from "@storage/ToDo/toDoDoneTask";
 
+import { BannerAd, BannerAdSize, InterstitialAd, AdEventType } from 'react-native-google-mobile-ads';
+
+const adUnitId = 'ca-app-pub-1504438003408356/7977516229';
+
+const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+    requestNonPersonalizedAdsOnly: true
+});
+
 export default function ToDo() {
 
     const [tasks, setTasks] = useState<TaskDTO[]>([]);
@@ -118,6 +126,14 @@ export default function ToDo() {
 
     useEffect(() => {
         fetchTasks()
+
+        const unsubscribe = interstitial.addAdEventListener(AdEventType.LOADED, () => {
+            setIsLoading(true)
+        })
+
+        interstitial.load();
+
+        return unsubscribe
     }, [])
 
     return (
@@ -174,6 +190,13 @@ export default function ToDo() {
                 </>
             }
 
+            <BannerAd 
+                unitId={adUnitId}
+                size={BannerAdSize.FULL_BANNER}
+                requestOptions={{
+                requestNonPersonalizedAdsOnly: true
+                }}
+            />
         </Container>
     )
 }
