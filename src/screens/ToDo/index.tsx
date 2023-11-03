@@ -192,9 +192,9 @@ export default function ToDo() {
 
             <BannerAd 
                 unitId={adUnitId}
-                size={BannerAdSize.FULL_BANNER}
+                size={BannerAdSize.BANNER}
                 requestOptions={{
-                requestNonPersonalizedAdsOnly: true
+                    requestNonPersonalizedAdsOnly: true
                 }}
             />
         </Container>
