@@ -8,12 +8,12 @@
         "distribution": "internal"
       },
       "env": {
-        "GOOGLE_ADS_MOBILE": "ca-app-pub-6590861475777451~5768790900"
+        "GOOGLE_ADS_MOBILE": "ca-app-pub-1504438003408356~6552695477"
       }
     },
     "production": {
       "env": {
-        "GOOGLE_ADS_MOBILE": "ca-app-pub-6590861475777451~5768790900"
+        "GOOGLE_ADS_MOBILE": "ca-app-pub-1504438003408356~6552695477"
       }
     }
   }
